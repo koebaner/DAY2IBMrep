@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 4",
+	"properties": {
+		"content": {
+			"query": "CREATE TABLE Orders  (      \n    OrderID int IDENTITY(1,1) NOT NULL     ,\n    OrderDate datetime NOT NULL     ,\n    OrderDescription char(15) DEFAULT 'NewOrder' )  \n    WITH  \n    (   CLUSTERED INDEX (OrderID)  ,   \n    DISTRIBUTION = HASH(OrderID));",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "mysqldpool",
+				"poolName": "mysqldpool"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

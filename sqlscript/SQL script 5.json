@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 5",
+	"properties": {
+		"content": {
+			"query": "select * from dbo.Orders",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "mysqldpool",
+				"poolName": "mysqldpool"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
